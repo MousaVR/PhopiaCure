@@ -12,6 +12,7 @@ public class Score : MonoBehaviour
         {
             score++;
             other.gameObject.SetActive(false);
+            gameObject.GetComponentInChildren<AudioSource>().Play();
         }
     }
 }
